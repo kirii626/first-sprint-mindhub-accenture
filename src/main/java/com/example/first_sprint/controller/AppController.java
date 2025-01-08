@@ -1,6 +1,7 @@
 package com.example.first_sprint.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.http.ResponseEntity;
@@ -27,12 +28,23 @@ public class AppController {
     }
 
     @GetMapping("/{id}")
+    @Operation(summary = "Get the id", description = "Retrieves the id passed in the url")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Id successfully received."),
+            @ApiResponse(responseCode = "400", description = "Bad request, invalid id.")
+    })
     public String getUserById(@PathVariable("id") Long id) {
         return "User ID: " + id;
     }
 
     @GetMapping("/search")
-    public String search(@RequestParam(name = "query", defaultValue = "") String query) {
+    @Operation(summary = "Get the param", description = "Retrieves the param passed in the url to make a search")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Parameter of query successfully received."),
+            @ApiResponse(responseCode = "400", description = "Bad request, invalid search.")
+    })
+    public String search(@RequestParam(name = "query", defaultValue = "")
+                             @Parameter(description = "Search query") String query) {
         return "Search results for: " + query;
     }
 }
