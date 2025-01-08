@@ -4,8 +4,8 @@ Welcome to the **first activity** for the **first sprint** of the **Immersive Ja
 
 ## 📝 What is this activity about?
 
-In this exercise, you'll create a simple **GET endpoint** that greets our user.  
-It's implemented as a basic **servlet**, and you can test it easily by running the code and accessing the path in **Postman**.
+In this exercise, you'll create simple **GET endpoints** that greets our user or take the data you'll pass at the url.  
+They are implemented with a basic **servlet**, and you can test them easily by running the code and accessing the path in **Postman**.
 
 ---
 
@@ -13,14 +13,30 @@ It's implemented as a basic **servlet**, and you can test it easily by running t
 
 1. Run the code.
 2. Open Postman.
-3. Make a **GET request** to the specified path.
-4. 🎉 See the greeting message in the response!
+3. Make a **GET request** or **POST request** to the specified path.
+4. 🎉 See the output message in the response!
 
 ---
 
 ## 🖥️ Example Output
 
-Here’s what you should see:
+Here’s what you should see on the first endpoint:
 
 
-![image](https://github.com/user-attachments/assets/ae852f16-ff11-4857-8d7a-05b5709a3777)
+![image](https://github.com/user-attachments/assets/5f825e0c-f904-43eb-a3c8-83f5f378aef9)
+
+Here's what you should see on the second endpoint:
+
+![image](https://github.com/user-attachments/assets/de156ce6-2589-4814-a76e-96f308046cf2)
+
+Here's what you should see on the third endpoint: 
+
+![image](https://github.com/user-attachments/assets/356b672e-4012-4190-915a-7ad7fc32d792)
+
+Here's what you should see on the fourth endpoint: 
+
+![image](https://github.com/user-attachments/assets/6f444841-47a1-4b3a-8ab4-646d4a50d1cc)
+
+
+
+
